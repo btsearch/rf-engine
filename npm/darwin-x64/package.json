@@ -1,6 +1,6 @@
 {
   "name": "@btsearch/rf-engine-darwin-x64",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "os": ["darwin"],
   "cpu": ["x64"],
   "main": "rf-engine.darwin-x64.node",

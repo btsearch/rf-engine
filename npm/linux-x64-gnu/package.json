@@ -1,8 +1,9 @@
 {
   "name": "@btsearch/rf-engine-linux-x64-gnu",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "os": ["linux"],
   "cpu": ["x64"],
+  "libc": ["glibc"],
   "main": "rf-engine.linux-x64-gnu.node",
   "files": ["rf-engine.linux-x64-gnu.node"],
   "description": "Platform binary for @btsearch/rf-engine (linux-x64-gnu)",

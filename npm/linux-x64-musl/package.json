@@ -1,0 +1,16 @@
+{
+  "name": "@btsearch/rf-engine-linux-x64-musl",
+  "version": "0.1.5",
+  "os": ["linux"],
+  "cpu": ["x64"],
+  "libc": ["musl"],
+  "main": "rf-engine.linux-x64-musl.node",
+  "files": ["rf-engine.linux-x64-musl.node"],
+  "description": "Platform binary for @btsearch/rf-engine (linux-x64-musl)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btsearch/rf-engine.git"
+  },
+  "publishConfig": { "access": "public" }
+}
