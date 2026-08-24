@@ -1,19 +1,15 @@
 {
   "name": "@btsearch/rf-engine-win32-x64-msvc",
-  "version": "0.1.2",
-  "os": [
-    "win32"
-  ],
-  "cpu": [
-    "x64"
-  ],
+  "version": "0.1.3",
+  "os": ["win32"],
+  "cpu": ["x64"],
   "main": "rf-engine.win32-x64-msvc.node",
-  "files": [
-    "rf-engine.win32-x64-msvc.node"
-  ],
+  "files": ["rf-engine.win32-x64-msvc.node"],
   "description": "Platform binary for @btsearch/rf-engine (win32-x64-msvc)",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btsearch/rf-engine.git"
+  },
+  "publishConfig": { "access": "public" }
 }
