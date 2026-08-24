@@ -1,7 +1,7 @@
 target/
 node_modules/
 *.node
-binding.cjs
+/binding.cjs
 npm/*/*.node
-index.js
-index.d.ts
+/index.js
+/index.d.ts

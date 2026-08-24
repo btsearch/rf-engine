@@ -27,3 +27,5 @@ jobs:
       - run: cargo clippy --all-targets -- -D warnings
       - run: cargo test
       - run: pnpm build:debug
+      - run: pnpm verify:package
+      - run: pnpm test:imports

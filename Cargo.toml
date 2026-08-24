@@ -1,6 +1,6 @@
 [package]
 name = "rf-engine"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2024"
 description = "RF propagation engine with pluggable geospatial data sources, path analysis, and coverage mapping"
 license = "MIT"
