@@ -19,18 +19,13 @@ impl Bounds {
     }
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, Default, PartialEq, Eq)]
 pub enum VerticalDatum {
+    #[default]
     Egm96,
     Egm2008,
     Wgs84Ellipsoid,
     Local,
-}
-
-impl Default for VerticalDatum {
-    fn default() -> Self {
-        Self::Egm96
-    }
 }
 
 #[derive(Debug, Clone)]

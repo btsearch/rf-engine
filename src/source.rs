@@ -26,7 +26,7 @@ pub struct SourceResolver {
 
 impl SourceResolver {
     pub fn new(mut sources: Vec<Box<dyn TerrainSource>>) -> Self {
-        sources.sort_by(|a, b| b.metadata().priority.cmp(&a.metadata().priority));
+        sources.sort_by_key(|a| std::cmp::Reverse(a.metadata().priority));
         Self { sources }
     }
 

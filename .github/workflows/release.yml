@@ -80,13 +80,13 @@ jobs:
           merge-multiple: true
 
       - run: pnpm install --no-frozen-lockfile
-      - run: pnpm napi artifacts --artifacts-dir artifacts
+      - run: pnpm napi artifacts -d artifacts
       - run: ls -la npm/*/
       - name: Publish platform packages
         run: |
           for dir in npm/*/; do
             cd "$dir"
-            npm publish --access public
+            npm publish --access public || echo "skipped $(basename $dir) (already published)"
             cd ../..
           done
         env:

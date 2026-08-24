@@ -1,0 +1,19 @@
+{
+  "name": "@btsearch/rf-engine-darwin-x64",
+  "version": "0.1.2",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "rf-engine.darwin-x64.node",
+  "files": [
+    "rf-engine.darwin-x64.node"
+  ],
+  "description": "Platform binary for @btsearch/rf-engine (darwin-x64)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

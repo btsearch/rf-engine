@@ -119,10 +119,10 @@ impl<'a> CoverageCalculator<'a> {
         let mut raster = CoverageRaster::new(width, height, bounds, params.resolution_m);
         for (x, y, loss, source_id) in results {
             raster.set(x, y, loss as f32);
-            if let Some(sid) = source_id {
-                if !raster.source_ids.contains(&sid) {
-                    raster.source_ids.push(sid);
-                }
+            if let Some(sid) = source_id
+                && !raster.source_ids.contains(&sid)
+            {
+                raster.source_ids.push(sid);
             }
         }
 

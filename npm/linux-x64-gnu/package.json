@@ -1,0 +1,19 @@
+{
+  "name": "@btsearch/rf-engine-linux-x64-gnu",
+  "version": "0.1.2",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "rf-engine.linux-x64-gnu.node",
+  "files": [
+    "rf-engine.linux-x64-gnu.node"
+  ],
+  "description": "Platform binary for @btsearch/rf-engine (linux-x64-gnu)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
