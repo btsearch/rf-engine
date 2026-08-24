@@ -1,0 +1,23 @@
+[package]
+name = "rf-engine"
+version = "0.1.0"
+edition = "2024"
+description = "RF propagation engine with pluggable geospatial data sources, path analysis, and coverage mapping"
+license = "MIT"
+repository = "https://github.com/btsearch/rf-engine"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+p1812 = "0.1"
+rayon = "1"
+napi = { version = "2", default-features = false, features = ["napi9"] }
+napi-derive = "2"
+thiserror = "2"
+
+[build-dependencies]
+napi-build = "2"
+
+[profile.release]
+lto = true

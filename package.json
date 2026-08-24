@@ -1,0 +1,76 @@
+{
+  "name": "@btsearch/rf-engine",
+  "version": "0.1.1",
+  "description": "RF propagation engine with pluggable geospatial data sources, path analysis, and coverage mapping",
+  "homepage": "https://github.com/btsearch/rf-engine#readme",
+  "bugs": {
+    "url": "https://github.com/btsearch/rf-engine/issues"
+  },
+  "license": "MIT",
+  "author": "ririxi <dev@ririxi.dev>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btsearch/rf-engine.git"
+  },
+  "files": [
+    "binding.cjs",
+    "p1812",
+    "link-budget",
+    "coverage",
+    "scripts",
+    "*.node"
+  ],
+  "type": "module",
+  "exports": {
+    "./p1812": {
+      "types": "./p1812/index.d.ts",
+      "import": "./p1812/index.js"
+    },
+    "./link-budget": {
+      "types": "./link-budget/index.d.ts",
+      "import": "./link-budget/index.js"
+    },
+    "./coverage": {
+      "types": "./coverage/index.d.ts",
+      "import": "./coverage/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release && node scripts/post-build.js",
+    "build:debug": "napi build --platform && node scripts/post-build.js",
+    "prepublishOnly": "napi prepublish -t npm",
+    "version": "napi version"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.0"
+  },
+  "optionalDependencies": {
+    "@btsearch/rf-engine-darwin-arm64": "0.1.0",
+    "@btsearch/rf-engine-darwin-x64": "0.1.0",
+    "@btsearch/rf-engine-linux-arm64-gnu": "0.1.0",
+    "@btsearch/rf-engine-linux-x64-gnu": "0.1.0",
+    "@btsearch/rf-engine-win32-x64-msvc": "0.1.0"
+  },
+  "napi": {
+    "name": "rf-engine",
+    "triples": {
+      "defaults": true,
+      "additional": [
+        "x86_64-unknown-linux-gnu",
+        "aarch64-unknown-linux-gnu",
+        "x86_64-apple-darwin",
+        "aarch64-apple-darwin",
+        "x86_64-pc-windows-msvc"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@11.20.0"
+}

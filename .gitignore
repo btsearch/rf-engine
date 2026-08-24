@@ -1,0 +1,7 @@
+target/
+node_modules/
+*.node
+binding.cjs
+npm/
+index.js
+index.d.ts
