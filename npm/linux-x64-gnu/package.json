@@ -1,16 +1,26 @@
 {
   "name": "@btsearch/rf-engine-linux-x64-gnu",
-  "version": "0.1.6",
-  "os": ["linux"],
-  "cpu": ["x64"],
-  "libc": ["glibc"],
-  "main": "rf-engine.linux-x64-gnu.node",
-  "files": ["rf-engine.linux-x64-gnu.node"],
+  "version": "0.1.9",
   "description": "Platform binary for @btsearch/rf-engine (linux-x64-gnu)",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/btsearch/rf-engine.git"
   },
-  "publishConfig": { "access": "public" }
+  "files": [
+    "rf-engine.linux-x64-gnu.node"
+  ],
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "libc": [
+    "glibc"
+  ],
+  "main": "rf-engine.linux-x64-gnu.node",
+  "publishConfig": {
+    "access": "public"
+  }
 }

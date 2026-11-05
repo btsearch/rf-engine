@@ -1,6 +1,6 @@
 {
   "name": "@btsearch/rf-engine",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "description": "RF propagation engine with pluggable geospatial data sources, path analysis, and coverage mapping",
   "homepage": "https://github.com/btsearch/rf-engine#readme",
   "bugs": {
@@ -51,13 +51,13 @@
     "@napi-rs/cli": "^2.18.0"
   },
   "optionalDependencies": {
-    "@btsearch/rf-engine-darwin-arm64": "0.1.6",
-    "@btsearch/rf-engine-darwin-x64": "0.1.6",
-    "@btsearch/rf-engine-linux-arm64-gnu": "0.1.6",
-    "@btsearch/rf-engine-linux-arm64-musl": "0.1.6",
-    "@btsearch/rf-engine-linux-x64-gnu": "0.1.6",
-    "@btsearch/rf-engine-linux-x64-musl": "0.1.6",
-    "@btsearch/rf-engine-win32-x64-msvc": "0.1.6"
+    "@btsearch/rf-engine-darwin-arm64": "0.1.9",
+    "@btsearch/rf-engine-darwin-x64": "0.1.9",
+    "@btsearch/rf-engine-linux-arm64-gnu": "0.1.9",
+    "@btsearch/rf-engine-linux-arm64-musl": "0.1.9",
+    "@btsearch/rf-engine-linux-x64-gnu": "0.1.9",
+    "@btsearch/rf-engine-linux-x64-musl": "0.1.9",
+    "@btsearch/rf-engine-win32-x64-msvc": "0.1.9"
   },
   "napi": {
     "name": "rf-engine",
